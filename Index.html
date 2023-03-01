@@ -5,69 +5,88 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Ilya Petrenko">
+	<meta name="description" content="Резюме Петренко Ильи">
+	<link rel="stylesheet" href="./css/style.css">
 	<title>Resume Ilya</title>
 </head>
 
 <body>
-	<img src="image1.jpg" alt="Илья Петренко" width="200">
-	<h1>Илья Петренко</h1>
-	<p>Я <strong><em>обычный парень</em></strong>, который проходит курс от школы <strong>"Result School"!</strong></p>
-	<p>Я хочу закончить этот курс успешно, чтобы быть востребованным специалистом!</p>
+	<div class="container">
+		<header>
+			<div class="headText">
+				<div class="avatar">
+					<img src="image1.jpg" alt="Илья Петренко">
+				</div>
+				<div class="description">
+					<h1>Илья Петренко</h1>
+					<p>Я <strong><em>обычный парень</em></strong>, который проходит курс от школы <strong>"Result School"!</strong></p>
+					<p>Я хочу закончить этот курс успешно, чтобы быть востребованным специалистом!</p>
+					<h2>Мои социальные сети</h2>
+					<div>
+						<a href="https://vk.com/ilya1996ptz" target="_blank">Vkontakte</a>
+					</div>
+				</div>
+			</div>
+		</header>
+	
+	<article>
+		<div class="aboutMe">
+			<h2>Мои хобби</h2>
+			
+			<ol>
+				<li>Программирование</li>
+				<li>Автомобильная техника</li>
+				<li>Компьютерная техника</li>
+				<li>Бег</li>
+			</ol>
 
-	<hr />
-
-	<h2>Мои социальные сети</h2>
-	<ul>
-		<li><a href="https://vk.com/ilya1996ptz" target="_blank">Vkontakte</a></li>
-	</ul>
-
-	<h2>Мои хобби</h2>
-	<ol>
-		<li>Программирование</li>
-		<li>Автомобильная техника</li>
-		<li>Компьютерная техника</li>
-		<li>Бег</li>
-	</ol>
-
-	<table>
-		<thead>
-			<tr>
-				<th>Название</th>
-				<th>Должность</th>
-				<th>Года работы</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>УМВД России</td>
-				<td>Полицейский(водитель)</td>
-				<td>2020-2021</td>
-			</tr>
-			<tr>
-				<td>Петрозаволск-Лада</td>
-				<td>Автомобильный-слесарь</td>
-				<td>2021-2022</td>
-			</tr>
-			<tr>
-				<td>ПВМ-Сервис</td>
-				<td>Метролог</td>
-				<td>2022-н.в.</td>
-			</tr>
-		</tbody>
-	</table>
-	<h2>Связаться со мной</h2>
-	<form action="/">
-		<label for="1">Введите Имя:</label>
-		<input type="text" id="1" placeholder="Ваше имя">
-		<br />
-		<label for="2">Введите Email:</label>
-		<input type="email" id="2" placeholder="Ваш email">
-		<br />
-		<label for="3">Ваше сообщение:</label>
-		<textarea id="3" cols="25" rows="5" placeholder="Ваше сообщение.."></textarea>
-		<br />
-		<input type="submit" value="Push">
-	</form>
+			<table>
+				<thead>
+					<tr>
+						<th>Название</th>
+						<th>Должность</th>
+						<th>Года работы</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>УМВД России</td>
+						<td>Полицейский(водитель)</td>
+						<td>2020-2021</td>
+					</tr>
+					<tr>
+						<td>Петрозаволск-Лада</td>
+						<td>Автомобильный-слесарь</td>
+						<td>2021-2022</td>
+					</tr>
+					<tr>
+						<td>ПВМ-Сервис</td>
+						<td>Метролог</td>
+						<td>2022-н.в.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</article>	
+	<footer>
+		<div class="contactMe">
+			<h2>Связаться со мной</h2>
+			<form action="/" class="form-group">
+				<label for="1">Введите Имя:</label>
+				<input type="text" id="1" placeholder="Ваше имя" class="formData">
+				<br />
+				<label for="2">Введите Email:</label>
+				<input type="email" id="2" placeholder="Ваш email" class="formData">
+				<br />
+				<label for="3">Ваше сообщение:</label>
+				<textarea id="3" cols="25" rows="5"></textarea>
+				<br />
+				<input type="submit" value="Отправить" id="button">
+			</form>
+		</div>
+	</footer>
+	</div>
 </body>
 
 </html>
